@@ -1,0 +1,1536 @@
+[
+  {
+    "symbolicName": "com.sun.jersey.servlet",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ab4ff82bbc5e86761bf92e9686d7ab09d2404c30",
+    "jarFileModificationDate": "2013-02-11T21:45:26+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-servlet-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.http-servlet",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "42e514364d418f46611232c67b9294ec7b4f0abe",
+    "jarFileModificationDate": "2013-02-11T21:49:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-http-servlet-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.core.jackson-annotations",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0b01cc83e745fc4425a3968fafbf8e5b8254a6dd",
+    "jarFileModificationDate": "2013-01-26T13:29:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-annotations-2.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jackson-mapper-asl",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95400a7922ce75383866eb72f6ef4a7897923945",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-mapper-asl-1.9.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.jboss.netty",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 7,
+      "qualifier": "Final"
+    },
+    "jarFileFingerprint": "1a1c5dde827576f3730bf6f3d7b389e770b90aaa",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/netty-3.2.7.Final.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "stax-api-1.0.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "49c100caf72d658aca8e58bd74a4ba90fa2b0d70",
+    "jarFileModificationDate": "2013-01-26T13:29:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/stax-api-1.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.xerial.snappy.snappy-java",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 5,
+      "qualifier": "M3"
+    },
+    "jarFileFingerprint": "69a346aecc49b74879eae86c0b0968457ef43743",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/snappy-java-1.0.5-M3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "servlet-api-2.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5959582d97d8b61f4d154ca9e495aafd16726e34",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/servlet-api-2.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "asm-tree-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cd792e29c79d170c5d0bdd05adf5807cf6875c90",
+    "jarFileModificationDate": "2013-01-26T13:35:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/asm-tree-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bndfile.temp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b001"
+    },
+    "jarFileFingerprint": "0a2d7eef06011111ff9001daf137b87c29d580e2",
+    "jarFileModificationDate": "2013-01-26T13:35:56+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pfl-tf-tools-1.0.0-b001.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.lang",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "16313e02a793435009f1e458fa4af5d879f6fb11",
+    "jarFileModificationDate": "2013-01-26T13:28:52+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-lang-2.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.api",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6f3b8a24bf970f17289b234284c94f43eb42f0e4",
+    "jarFileModificationDate": "2013-01-26T13:35:24+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/slf4j-api-1.6.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gmbal",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": "b003"
+    },
+    "jarFileFingerprint": "b75e89b61cd7d5b47d2968380b0aa162633d029e",
+    "jarFileModificationDate": "2013-01-26T13:35:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/gmbal-3.2.0-b003.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jbcrypt-0.3m",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fe2d9c5f23767d681a7e38fc8986b812400ec583",
+    "jarFileModificationDate": "2013-03-15T17:50:04+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jbcrypt-0.3m.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ececf755ad0be59e88e5cbd67f333420e0cea3a7",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.antlr.antlr-runtime",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "31c746001016c6226bd7356c9f87a6a084ce3715",
+    "jarFileModificationDate": "2013-01-27T09:50:42+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/antlr-runtime-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "colt-1.2.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0abc984f3adc760684d49e0f11ddf167ba516d4f",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/colt-1.2.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bf4a54c4cb3a08152cd726775693ab65ddf1e299",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.mortbay.jetty.util",
+    "version": {
+      "major": 6,
+      "minor": 1,
+      "micro": 22,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9039d1940a9ae1c91d2b5d7fdfd64bd1924cd447",
+    "jarFileModificationDate": "2013-01-27T09:50:42+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jetty-util-6.1.22.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "edu.stanford.ppl.snaptree",
+    "version": {
+      "major": 0,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "88caaa75fba09a4944f696c398c09da956f7c2c2",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/snaptree-0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "07447f54ac0c16f3cbcab37dbabd7bc79c1fcd19",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunpkcs11.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.fusesource.jansi",
+    "version": {
+      "major": 1,
+      "minor": 5,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e91d05da2b2401b0d39a9be894cbc148e37763ed",
+    "jarFileModificationDate": "2013-01-26T13:35:50+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jansi-1.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "lz4-1.1.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6eb4869b4d9a15ee6a475945e66f4015d266b191",
+    "jarFileModificationDate": "2013-03-15T17:50:04+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/lz4-1.1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "cassandra-all-1.2.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0960fde82bb053be5cb18e13549dd575f38d8ca5",
+    "jarFileModificationDate": "2013-03-15T17:53:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/cassandra-all-1.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b45e5b28fd53b3fe3a43caac87ad99a7a716635c",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e457fb1deb9b29d15af3f3c01f8086370dc7cd8b",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.sun.jersey.json",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e676aa8f1b09027aecba46e85351ce8e30bb4217",
+    "jarFileModificationDate": "2013-02-11T21:45:34+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-json-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f56383db77ae9502e6ca617e57d55ee73d631c46",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.sun.jersey.jersey-server",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f3ec0882700751d45d86b6b638804eb6d34bad6f",
+    "jarFileModificationDate": "2013-02-11T21:45:46+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-server-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "092e3c7b17675f448c4bb36fbeb4c1a04e9e63e6",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/ext/zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.yammer.metrics.metrics-core",
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f9da43ba726f81bd4f513172e52b6795804192cf",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/metrics-core-2.0.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jackson-jaxrs",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aedf43f1d5005561e531b6bf0d067e4d20f58aba",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-jaxrs-1.9.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "antlr-2.7.7",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "83cd2cd674a217ade95a4bb83a8a14f351f48bd0",
+    "jarFileModificationDate": "2013-01-26T13:35:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/antlr-2.7.7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.yaml.snakeyaml",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a1e23e31c424d566ee27382e373d73a28fdabd88",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/snakeyaml-1.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-cli-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "11c98b99ad538f2f67633afd4d7f4d98ecfbb408",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-cli-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 12,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5bc66dd95b79db1e437eb08adba124a3e4088dc0",
+    "jarFileModificationDate": "2013-01-27T09:50:00+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/guava-12.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.javassist.javassist",
+    "version": {
+      "major": 3,
+      "minor": 15,
+      "micro": 0,
+      "qualifier": "GA"
+    },
+    "jarFileFingerprint": "79907309ca4bb4e5e51d4086cc4179b2611358d7",
+    "jarFileModificationDate": "2013-01-26T13:29:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/javassist-3.15.0-GA.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9c65be66b7d064aa969eed550ce6bca0c930fd4c",
+    "jarFileModificationDate": "2012-07-26T23:36:33+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.commons.configuration",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "32cadde23955d7681b0d94a2715846d20b425235",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-configuration-1.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.thinkaurelius.titan.titan-cassandra",
+    "version": {
+      "major": 0,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6466b839a4a74a15853a673bd55dd2c8a85ee234",
+    "jarFileModificationDate": "2013-03-22T11:24:16+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/titan-cassandra-0.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "cassandra-thrift-1.2.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b6be61f075eb257ece3163a2bcb6ca10a6cb04b0",
+    "jarFileModificationDate": "2013-03-15T17:50:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/cassandra-thrift-1.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.googlecode.minlog",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1fbae5eeb861ccbf4afa76e22959b01a0d099857",
+    "jarFileModificationDate": "2013-01-27T09:50:02+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/minlog-1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.rcm",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aefe5167726230d04e96234d9ede9c864356fd8a",
+    "jarFileModificationDate": "2013-02-11T21:49:56+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-rcm-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1d7d28fa738bdbfe4fbd895d9486308999bdf440",
+    "jarFileModificationDate": "2013-01-27T09:50:36+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/httpclient-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bndfile.temp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b001"
+    },
+    "jarFileFingerprint": "8ffe4f75e7e9121365632a9f6eb3fd07beb3c70d",
+    "jarFileModificationDate": "2013-01-26T13:35:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pfl-tf-1.0.0-b001.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bndfile.temp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b001"
+    },
+    "jarFileFingerprint": "556d5e6be5678352e5d47b4b542efcaa889d34ff",
+    "jarFileModificationDate": "2013-01-26T13:35:56+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pfl-asm-1.0.0-b001.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "avro-1.4.0-cassandra-1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "eca76e00f897461f95bbb085f67936417ae03825",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/avro-1.4.0-cassandra-1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "stax-api-1.0-2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d6337b0de8b25e53e81b922352fbea9f9f57ba0b",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/stax-api-1.0-2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.blueprints.blueprints-core",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e021020c460c110d2b43a1450bc4100b48a7d6bc",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/blueprints-core-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "libthrift-0.7.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b10dbd7c223392bb9bf22cef09ff2eb21515f35c",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/libthrift-0.7.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jaxb-impl-2.2.3-1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "56baae106392040a45a06d4a41099173425da1e6",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jaxb-impl-2.2.3-1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "json-simple-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5e303a03d04e6788dddfa3655272580ae0fc13bb",
+    "jarFileModificationDate": "2013-01-26T13:29:46+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/json-simple-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.msgpack",
+    "version": {
+      "major": 0,
+      "minor": 6,
+      "micro": 5,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0a3043430b46b172cefa13d3eb878591513cbc47",
+    "jarFileModificationDate": "2013-01-26T13:29:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/msgpack-0.6.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.portunif",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d0d8f7b149560a70107b99a39be53f42c4884590",
+    "jarFileModificationDate": "2013-02-11T21:50:08+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-portunif-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.io",
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7ffdb02f95af1c1a208544e076cea5b8e66e731a",
+    "jarFileModificationDate": "2013-01-26T13:35:56+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-io-2.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.mortbay.jetty.server",
+    "version": {
+      "major": 6,
+      "minor": 1,
+      "micro": 22,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e097b3b684cececf84a35cfdd08e56096a3188da",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jetty-6.1.22.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bndfile.temp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b001"
+    },
+    "jarFileFingerprint": "055dffe205526f58e2a1eb29a3913fde2530f011",
+    "jarFileModificationDate": "2013-01-26T13:35:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pfl-basic-1.0.0-b001.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-beanutils-1.7.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5675fd96b29656504b86029551973d60fb41339b",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-beanutils-1.7.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.servicemix.bundles.commons-csv",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "r706900_3"
+    },
+    "jarFileFingerprint": "ff0cd44f590a80c5c87aaa85a0d2bab2d350bc4a",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/org.apache.servicemix.bundles.commons-csv-1.0-r706900_3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.github.stephenc.jamm",
+    "version": {
+      "major": 0,
+      "minor": 2,
+      "micro": 5,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0422d3543c01df2f1d8bd1f3064adb54fb9e93f3",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jamm-0.2.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "327ba95c3a92a606a76b43eadc4b9c10bf97f7cc",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jline",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e8f2d4690059d42a8f0f29195884a72a82ce4bb7",
+    "jarFileModificationDate": "2013-01-27T09:50:36+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jline-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "joda-time",
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/joda-time-2.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.sun.jersey.core",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ea723f958123e794f5c08fc0baa92578c72eef96",
+    "jarFileModificationDate": "2013-02-11T21:45:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-core-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "asm-analysis-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c624956db93975b7197699dcd7de6145ca7cf2c8",
+    "jarFileModificationDate": "2013-01-26T13:35:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/asm-analysis-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "activation-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e6cb541461c2834bdea3eb920f1884d1eb508b50",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/activation-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.rexster.rexster-server",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "29daffe579571c639ec2581400a6223775b98192",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/rexster-server-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.sun.jersey.client",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2496bd961e09b4863d93588840c63f4d7b18a022",
+    "jarFileModificationDate": "2013-02-11T21:45:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-client-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "astyanax-1.0.6",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7adbd53f77d44cfeb74796eff9f8137244435a55",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/astyanax-1.0.6.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "bndfile.temp",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b001"
+    },
+    "jarFileFingerprint": "3991498071553b2f447eb5d146439f37bc38fda2",
+    "jarFileModificationDate": "2013-01-26T13:35:56+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pfl-basic-tools-1.0.0-b001.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "07004d316e681efe7fc52ab35f5270afa36923b3",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.googlecode.concurrentlinkedhashmap.lru",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "beb907bae0604fdc153cbcc2f0dc84d3ae35bf36",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/concurrentlinkedhashmap-lru-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e813b8722c387b22e1adccf7914729db09bcb4a9",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/httpcore-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.http",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1dd583627a7ae8ccfe0aef81fe7f366bf4d563c9",
+    "jarFileModificationDate": "2013-01-26T13:35:18+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-http-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.codehaus.jettison.jettison",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "056dcc8480ecd2c03ec004aa76278d1f2d621561",
+    "jarFileModificationDate": "2013-01-26T13:29:46+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jettison-1.3.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "stringtemplate-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6fe2e3bb57daebd1555494818909f9664376dd6c",
+    "jarFileModificationDate": "2013-01-27T09:50:42+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/stringtemplate-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.http-server",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a79da85b6845109a809a46f47ea104fc323599c7",
+    "jarFileModificationDate": "2013-01-26T13:35:18+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-http-server-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.framework",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "29aa7b45289a0d293a7278b2d185d401ef367f92",
+    "jarFileModificationDate": "2013-02-11T21:50:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-framework-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "log4j",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7999a63bfccbc7c247a9aea10d83d4272bd492c6",
+    "jarFileModificationDate": "2013-01-27T09:10:42+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/log4j-1.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.antlr.antlr",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6b0acabea7bb3da058200a77178057e47e25cb69",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/antlr-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.collections",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "761ea405b9b37ced573d2df0d1e3a4e0f9edc668",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-collections-3.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dcadee176c109cb63da52023c758e27ea8b3f45a",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "asm-commons-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e7a19b8c60589499e35f5d2068d09013030b8891",
+    "jarFileModificationDate": "2013-01-26T13:35:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/asm-commons-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.pipes",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ca9cb1384a0d6f490f40f7490d268ac8717992d3",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/pipes-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsr305-1.3.9",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf",
+    "jarFileModificationDate": "2013-01-27T09:50:00+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jsr305-1.3.9.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "concurrent-1.3.4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1cf394c2a388199db550cda311174a4c6a7d117c",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/concurrent-1.3.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "javax.servlet-api",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6bf0ebb7efd993e222fc1112377b5e92a13b38dd",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/javax.servlet-api-3.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4c918c4410c8c4b3ce597b0f698d696baf108646",
+    "jarFileModificationDate": "2012-07-26T23:36:34+05:30",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "asm-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9bc1511dec6adf302991ced13303e4140fdf9ab7",
+    "jarFileModificationDate": "2013-01-27T09:11:20+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/asm-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.googlecode.reflectasm",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "85067c083609bb2827f4546fb5d76a36bee90357",
+    "jarFileModificationDate": "2013-01-27T09:50:00+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/reflectasm-1.01.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-digester-1.8",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dc6a73fdbd1fa3f0944e8497c6c872fa21dca37e",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-digester-1.8.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.core.jackson-databind",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e9c672d2d60c966772c6271d5a61614a4259274a",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-databind-2.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.thinkaurelius.titan.titan-core",
+    "version": {
+      "major": 0,
+      "minor": 2,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8dbef8b829104893b03aef0f2304ba300d2027bf",
+    "jarFileModificationDate": "2013-03-22T11:19:32+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/titan-core-0.2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.gremlin.gremlin-java",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "13be23f51d7f9229ecbcf92b06aef2a0eb3dc26c",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/gremlin-java-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.mortbay.jetty.servlet-api",
+    "version": {
+      "major": 2,
+      "minor": 5,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "22bff70037e1e6fa7e6413149489552ee2064702",
+    "jarFileModificationDate": "2013-01-27T09:50:42+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/servlet-api-2.5-20081211.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.glassfish.grizzly.core",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 16,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e88799e9a34b14de74a7845ddbbf8ad479448956",
+    "jarFileModificationDate": "2013-02-11T21:50:08+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/grizzly-core-2.2.16.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.github.stephenc.eaio-uuid.uuid",
+    "version": {
+      "major": 3,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "925720c5d40c4ebf8601e06025e1402251ef71d2",
+    "jarFileModificationDate": "2013-01-27T09:50:36+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/uuid-3.2.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.rexster.rexster-protocol",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3c4b709decfbd0db1dbbae5cbf61874ac2d60c05",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/rexster-protocol-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.core.jackson-core",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3df73b1001916d861ea35f81a1da1f91513eccb4",
+    "jarFileModificationDate": "2013-01-26T13:29:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-core-2.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.pool",
+    "version": {
+      "major": 1,
+      "minor": 5,
+      "micro": 5,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7d8ffbdc47aa0c5a8afe5dc2aaf512f369f1d19b",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-pool-1.5.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jackson-xc",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "437c991a8eb2c8b69ef1dba2eba27fccb9b98448",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-xc-1.9.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jaxb-api-2.2.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aeb3021ca93dde265796d82015beecdcff95bf09",
+    "jarFileModificationDate": "2013-01-26T13:29:12+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jaxb-api-2.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "json-20090211",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c183aa3a2a6250293808bba12262c8920ce5a51c",
+    "jarFileModificationDate": "2013-01-26T13:29:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/json-20090211.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.github.stephenc.high-scale-lib.high-scale-lib",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e3fbb2a95269eb8049bc72a3b0ce3208378a30f5",
+    "jarFileModificationDate": "2013-01-27T09:50:40+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/high-scale-lib-1.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.gremlin.gremlin-groovy",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "23d2930b936930a2149b69261c5105215bcfce29",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/gremlin-groovy-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-beanutils-core-1.8.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "175dc721f87e4bc5cc0573f990e28c3cf9117508",
+    "jarFileModificationDate": "2013-01-26T13:29:16+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-beanutils-core-1.8.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.sun.jersey.grizzly2",
+    "version": {
+      "major": 1,
+      "minor": 17,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b1b51872e1bea9b9592c97286bbc19261fa23249",
+    "jarFileModificationDate": "2013-02-11T21:45:50+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jersey-grizzly2-1.17.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jackson-core-asl",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8493982bba1727106d767034bd0d8e77bc1931a9",
+    "jarFileModificationDate": "2013-01-26T13:29:14+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-core-asl-1.9.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.tinkerpop.rexster.rexster-core",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9abbbccd6d7488a8338ce1707c0c8318e50abef1",
+    "jarFileModificationDate": "2013-03-21T19:45:44+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/rexster-core-2.3.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.ning.compress-lzf",
+    "version": {
+      "major": 0,
+      "minor": 8,
+      "micro": 4,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "994da6bddb79a40c368d3040f2aa06b94faf6b1f",
+    "jarFileModificationDate": "2013-01-27T09:50:38+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/compress-lzf-0.8.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.datatype.jackson-datatype-json-org",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "049e33a780c3d9f1355fb044183e8bd80ba1a77c",
+    "jarFileModificationDate": "2013-01-26T13:29:10+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/jackson-datatype-json-org-2.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.codec",
+    "version": {
+      "major": 1,
+      "minor": 7,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9cd61d269c88f9fb0eb36cea1efcd596ab74772f",
+    "jarFileModificationDate": "2013-01-27T09:50:00+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-codec-1.7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.googlecode.kryo",
+    "version": {
+      "major": 1,
+      "minor": 4,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6ab0c114e4f29b5eed03ecd2d458e7179bdc86d8",
+    "jarFileModificationDate": "2013-01-27T09:50:00+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/kryo-1.04.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "asm-util-3.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "37ebfdad34d5f1f45109981465f311bbfbe82dcf",
+    "jarFileModificationDate": "2013-01-26T13:35:48+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/asm-util-3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "management-api",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": "b012"
+    },
+    "jarFileFingerprint": "707686d845faede060b79bdf018a25a469a611b4",
+    "jarFileModificationDate": "2013-01-26T13:35:54+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/management-api-3.0.0-b012.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2013-01-26T13:28:50+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "slf4j.log4j12",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bd245d6746cdd4e6203e976e21d597a46f115802",
+    "jarFileModificationDate": "2013-01-26T13:35:24+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/slf4j-log4j12-1.6.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "groovy",
+    "version": {
+      "major": 1,
+      "minor": 8,
+      "micro": 9,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2f947c95b008d9c1623b924e90de22729e7f625f",
+    "jarFileModificationDate": "2013-02-18T07:21:26+05:30",
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/groovy-1.8.9.jar",
+    "javaRuntime": false
+  }
+]

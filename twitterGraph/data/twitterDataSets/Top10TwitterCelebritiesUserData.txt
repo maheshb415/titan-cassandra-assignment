@@ -1,0 +1,11 @@
+#UserId	ScreenName	UserName	UserCreateTime	#Followers
+27260086	justinbieber	Justin Bieber	Sat Mar 28 16:41:22 +0000 2009	39014030
+14230524	ladygaga	Lady Gaga	Wed Mar 26 22:37:48 +0000 2008	37183143
+21447363	katyperry	Katy Perry	Fri Feb 20 23:45:56 +0000 2009	36406189
+813286	BarackObama	Barack Obama	Mon Mar 05 22:08:25 +0000 2007	31371612
+79293791	rihanna	Rihanna	Fri Oct 02 21:37:33 +0000 2009	29561747
+10228272	YouTube	YouTube	Tue Nov 13 21:43:46 +0000 2007	27686902
+17919972	taylorswift13	Taylor Swift	Sat Dec 06 10:10:54 +0000 2008	27641363
+16409683	britneyspears	Britney Spears	Mon Sep 22 20:47:35 +0000 2008	26806768
+44409004	shakira	Shakira	Wed Jun 03 17:38:07 +0000 2009	20660616
+26565946	jtimberlake	Justin Timberlake 	Wed Mar 25 19:10:50 +0000 2009	20146265

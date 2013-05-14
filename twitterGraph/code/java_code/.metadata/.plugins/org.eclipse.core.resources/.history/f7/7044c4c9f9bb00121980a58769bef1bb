@@ -1,0 +1,21 @@
+
+
+public class TwitterGraphConstants {
+	
+	//property name for User Node
+	public static final String USERID = "uid";
+	public static final String USERNAME = "uname";
+	public static final String USERSCREENNAME = "screenname";
+	public static final String USERCREATETIME = "createtime";
+	
+	//property name for User Node
+	public static final String TWEETID = "tweetid";
+	public static final String TEXT = "text";
+	public static final String TWEETTIME = "tweettime";
+	
+		
+	
+	public static final String FOLLOWSEDGETYPE = "follows";
+	public static final String FOLLOWEDBYEDGETYPE = "followedby";
+	public static final String STARTFOLLOWTIME = "followtime";
+}

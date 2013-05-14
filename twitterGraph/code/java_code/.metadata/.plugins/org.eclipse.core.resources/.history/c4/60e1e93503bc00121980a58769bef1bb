@@ -1,0 +1,46 @@
+
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+import com.thinkaurelius.titan.core.*; 
+import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.Query.Compare;
+
+public class Main {	
+	
+	
+	public static void main(String[] args) {
+				
+		System.out.println("Num args " + args.length);
+		
+		boolean loadGraph = true;
+		TitanGraph g = null;
+		long uid = 813286L;
+		String lowerDateStr = "";
+		
+		try {
+			String configFile = "../../../config/titan.cassandra.properties";
+			
+			g = TitanFactory.open(configFile);		
+			
+			//load the graph, if its not loaded
+			if(loadGraph) {
+				TwitterGraph.LoadTwitterGraph(g, true);	
+			}
+					
+			
+			DateTime after = DateTime.now(DateTimeZone.UTC);
+
+			TwitterGraph.PrintAllFollowersAfterGivenDateTime(g, uid, after);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally 		{
+			g.shutdown();
+		}	
+	}
+
+}

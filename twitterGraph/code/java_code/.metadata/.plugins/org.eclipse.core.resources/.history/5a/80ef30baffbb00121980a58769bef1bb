@@ -1,0 +1,84 @@
+
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+import com.thinkaurelius.titan.core.*; 
+import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.Query.Compare;
+
+public class Main {
+
+	public static void LoadTwitterGraph(TitanGraph g)
+	{		
+		
+		g.createKeyIndex(TwitterGraphConstants.USERID,Vertex.class);				
+
+		String twitterUsersDataFile = "../../../data/twitterDataSets/TwitterUsersData.txt";
+		TwitterGraph.LoadUsers(twitterUsersDataFile, g);
+							
+		String twitterUsersFollowersDataFile = "../../../data/twitterDataSets/TwitterUsersFollowersData.txt";
+		TwitterGraph.LoadFollowersData(twitterUsersFollowersDataFile, g);
+		
+		String twitterTweetsDataFile = "../../../data/twitterDataSets/TwitterTweetsData.txt";
+		TwitterGraph.LoadTweetsData(twitterTweetsDataFile, g);
+		
+		g.commit();
+		
+	}
+	
+	public static void PrintAllFollowersAfterGivenDateTime(TitanGraph g, long userId, DateTime after)
+	{
+		long epoch = after.getMillis();
+		Vertex v = null;
+		
+		try {
+			v = g.getVertices(TwitterGraphConstants.USERID, userId).iterator().next();
+			System.out.println(String.format("User Values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", 
+					v.getProperty(TwitterGraphConstants.USERID),
+					v.getProperty(TwitterGraphConstants.USERSCREENNAME),
+					v.getProperty(TwitterGraphConstants.USERNAME),
+					v.getProperty(TwitterGraphConstants.USERCREATETIME)));
+		} catch (java.util.NoSuchElementException e1) {
+			e1.printStackTrace();
+		}	
+		
+		String userName = v.getProperty(TwitterGraphConstants.USERNAME);
+		
+		for(Vertex vertex : v.query().labels(TwitterGraphConstants.FOLLOWEDBYEDGETYPE).has(TwitterGraphConstants.STARTFOLLOWTIME, epoch, Compare.GREATER_THAN).vertices()) { 
+			  System.out.println(String.format("%s is followed by %s", userName, vertex.getProperty(TwitterGraphConstants.USERSCREENNAME) )); 
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Num args " + args.length)
+		
+		TitanGraph g = null;
+		try
+		{
+			String configFile = "../../../config/titan.cassandra.properties";
+			
+			g = TitanFactory.open(configFile);		
+			
+			LoadTwitterGraph(g);	//To be used only one time for loading the graph
+			
+			
+			long uid = 813286L;
+			DateTime after = DateTime.now(DateTimeZone.UTC);
+
+			PrintAllFollowersAfterGivenDateTime(g, uid, after);
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			g.shutdown();
+		}	
+	}
+
+}

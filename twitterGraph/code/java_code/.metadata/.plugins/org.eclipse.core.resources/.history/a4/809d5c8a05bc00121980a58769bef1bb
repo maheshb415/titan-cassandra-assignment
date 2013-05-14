@@ -1,0 +1,46 @@
+
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+import com.thinkaurelius.titan.core.*; 
+import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.Query.Compare;
+
+public class Main {	
+	
+	public static void main(String[] args) {
+				
+		System.out.println("Num args " + args.length);
+		
+		boolean loadGraph = false;
+		TitanGraph g = null;
+		long uid = 813286L;
+		String afterDateStr = "2013-05-12 00:00:00";
+		String dateFormat = "yyyy-MM-dd HH:mm:ss";
+		String configFile = "../../../config/titan.cassandra.properties";
+		String twitterUsersDataFile = "../../../data/twitterDataSets/TwitterUsersData.txt";
+		String twitterUsersFollowersDataFile = "../../../data/twitterDataSets/TwitterUsersFollowersData.txt";
+		String twitterTweetsDataFile = "../../../data/twitterDataSets/TwitterTweetsData.txt";
+		try {
+						
+			g = TitanFactory.open(configFile);		
+			
+			//load the graph, if its not loaded
+			if(loadGraph) {
+				TwitterGraph.LoadTwitterGraph(g, twitterUsersDataFile, twitterUsersFollowersDataFile, twitterTweetsDataFile, true);	
+			}
+								
+			long epoch = TwitterGraph.GetEpoch(afterDateStr, dateFormat);
+			TwitterGraph.PrintAllFollowersAfterGivenDateTime(g, uid, epoch);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally 		{
+			g.shutdown();
+		}	
+	}
+
+}

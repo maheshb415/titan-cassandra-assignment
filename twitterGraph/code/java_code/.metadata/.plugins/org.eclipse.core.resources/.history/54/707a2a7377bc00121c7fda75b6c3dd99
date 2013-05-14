@@ -1,0 +1,76 @@
+
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+import com.thinkaurelius.titan.core.*; 
+import com.tinkerpop.blueprints.*;
+import com.tinkerpop.blueprints.Query.Compare;
+
+public class Main {	
+	
+	public static void PrintUsage()
+	{
+		System.out.println("\nUsage:\n");
+		
+		System.out.println("Use below command for one time loading the graph\n");
+		System.out.println("	java -jar TwitterGraphInTitan.jar load <cassandraConfigFile> <twitterUsersDataFile> <twitterUsersFollowersDataFile> <twitterTweetsDataFile>");
+		System.out.println("	Use below sample command if you are running from the directory containing the jar file (titan-cassandra-assignment/twitterGraph/build)");
+		System.out.println("	java -jar TwitterGraphInTitan.jar load ../config/titan.cassandra.properties ../data/twitterDataSets/TwitterUsersData.txt ../data/twitterDataSets/TwitterUsersFollowersData.txt ../data/twitterDataSets/TwitterTweetsData.txt");
+				
+		System.out.println("java -jar TwitterGraphInTitan.jar getfollowers <cassandraConfigFile> <userId> <afterDateSting> <DateFormat>");
+	}
+	public static void main(String[] args) {
+				
+		System.out.println("Num args " + args.length);
+		
+		if(args.length != 5) {
+			PrintUsage();
+			return;			
+		}
+		boolean loadGraph = false;
+		
+		String configFile = args[2];
+		String twitterUsersDataFile = "";
+		String twitterUsersFollowersDataFile = "";
+		String twitterTweetsDataFile = "";
+		
+		if(args[1].equalsIgnoreCase("load")) {			
+			twitterUsersDataFile = args[3];
+			twitterUsersFollowersDataFile = args[4];
+			twitterTweetsDataFile = args[5];	
+			loadGraph = true;
+		}
+		else if(args[1].equalsIgnoreCase("getfollowers"))	{
+			
+		}
+		else 
+		{
+		TitanGraph g = null;
+		long uid = 813286L;
+		String afterDateStr = "2013-05-12 00:00:00";
+		String dateFormat = "yyyy-MM-dd HH:mm:ss";
+		
+		
+		try {
+						
+			g = TitanFactory.open(configFile);		
+			
+			//load the graph, if its not loaded
+			if(loadGraph) {
+				TwitterGraph.LoadTwitterGraph(g, twitterUsersDataFile, twitterUsersFollowersDataFile, twitterTweetsDataFile, true);	
+			}
+								
+			long epoch = TwitterGraph.GetEpoch(afterDateStr, dateFormat);
+			TwitterGraph.PrintAllFollowersAfterGivenDateTime(g, uid, epoch);
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally 		{
+			g.shutdown();
+		}	
+	}
+
+}

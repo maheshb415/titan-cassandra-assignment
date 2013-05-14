@@ -1,0 +1,318 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+
+import com.thinkaurelius.titan.core.TitanGraph;
+import com.tinkerpop.blueprints.Edge;
+import com.tinkerpop.blueprints.Vertex;
+import com.tinkerpop.blueprints.Query.Compare;
+
+
+public class TwitterGraph {
+	
+	
+	//Loads the Twitter dataset into TitanGraph
+	//Loads Users, Followers and Tweets
+	public static void LoadTwitterGraph(TitanGraph g, boolean doCommit)
+	{		
+		
+		g.createKeyIndex(TwitterGraphConstants.USERID,Vertex.class);				
+
+		String twitterUsersDataFile = "../../../data/twitterDataSets/TwitterUsersData.txt";
+		TwitterGraph.LoadUsers(twitterUsersDataFile, g);
+							
+		String twitterUsersFollowersDataFile = "../../../data/twitterDataSets/TwitterUsersFollowersData.txt";
+		TwitterGraph.LoadFollowersData(twitterUsersFollowersDataFile, g);
+		
+		String twitterTweetsDataFile = "../../../data/twitterDataSets/TwitterTweetsData.txt";
+		TwitterGraph.LoadTweetsData(twitterTweetsDataFile, g);
+		
+		if(doCommit)
+		{
+			g.commit();
+		}
+		
+	}
+	
+	//util function
+	//to get the epoch corresponding to a given date string 
+	//formatStr is the format for the datetime string. for example => "EEE MMM d HH:mm:ss yyyy" or "yyyy-MM-dd HH:mm:ss" etc
+	//dateStr should be in the format specified by formatStr. If its not in that format the epoch for UTCNOW is returned
+	static long GetEpoch(String dateStr, String formatStr)
+	{
+		SimpleDateFormat df = new SimpleDateFormat(formatStr);
+		
+	    Date date;
+	    long epoch = -1;
+		try {
+			
+			date = df.parse(dateStr);
+			epoch = date.getTime();
+			System.out.println(String.format("Setting Epoch: dateStr:%s Epoch:%s", date, epoch));		    
+		    
+		} catch (ParseException e) {
+			//could not parse dateStr, so use current UTC time
+			
+			e.printStackTrace();
+			DateTime datetime = DateTime.now(DateTimeZone.UTC);
+			epoch = datetime.getMillis();
+			System.out.println(String.format("Setting Milliseconds: datetime:%s Epoch:%s", datetime, epoch));			
+			
+		} 	
+		return epoch;
+	}
+		
+	//load twitter users data from a file into given TitanGraph. 
+	//Format of each line in file => uid<tab>screenname<tab>uname<tab>createtime<tab>followercount
+	static void LoadUsers(String twitterUsersFile, TitanGraph g)
+	{
+		BufferedReader br = null;
+		 
+		try {
+ 
+			String sCurrentLine;
+ 
+			br = new BufferedReader(new FileReader(twitterUsersFile));
+ 
+			while ((sCurrentLine = br.readLine()) != null) {
+				
+				System.out.println(sCurrentLine);
+				
+				String[] parts = sCurrentLine.split("\t");
+				
+				if(parts.length != 5) {
+					continue;
+				}
+				
+				Vertex user = g.addVertex(null); 
+				long userId = Long.parseLong(parts[0]);
+				String userScreenName = parts[1];
+				String userName = parts[2];
+				String userCreateTime = parts[3];
+				
+				System.out.println(String.format("Setting values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", userId, userScreenName, userName, userCreateTime));
+				
+				user.setProperty(TwitterGraphConstants.USERID, userId);
+				user.setProperty(TwitterGraphConstants.USERSCREENNAME, userScreenName);
+				user.setProperty(TwitterGraphConstants.USERNAME, userName);
+				
+				//set user create time				
+				long epoch = GetEpoch(userCreateTime, "EEE MMM d HH:mm:ss yyyy");
+				user.setProperty(TwitterGraphConstants.USERCREATETIME, epoch);
+				
+				System.out.println(String.format("Set values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", 
+						user.getProperty(TwitterGraphConstants.USERID),
+						user.getProperty(TwitterGraphConstants.USERSCREENNAME),
+						user.getProperty(TwitterGraphConstants.USERNAME),
+						user.getProperty(TwitterGraphConstants.USERCREATETIME)));
+						
+			}
+ 
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+			
+		}
+		
+	}
+	
+	//load twitter follower data from a file. 
+	//format of each line in file => followerUID<tab>followedUID<tab>followtime
+	static void LoadFollowersData(String twitterUsersFollowersDataFile, TitanGraph g)
+	{
+		BufferedReader br = null;
+		 
+		try {
+ 
+			String sCurrentLine;
+ 
+			br = new BufferedReader(new FileReader(twitterUsersFollowersDataFile));
+ 
+			while ((sCurrentLine = br.readLine()) != null) {
+				System.out.println(sCurrentLine);
+				String[] parts = sCurrentLine.split("\t");
+				
+				if(parts.length != 3) {
+					continue;
+				}
+				
+				long followerUID = Long.parseLong(parts[0]);
+				long followedUID = Long.parseLong(parts[1]);
+				String followTime = parts[2];
+				System.out.println(String.format("Setting values followerUID:%s followedUID:%s followTime:%s", followerUID, followedUID, followTime));
+				
+				
+				Vertex followerUser;
+				Vertex followedUser;
+				try {
+					
+					followerUser = g.getVertices(TwitterGraphConstants.USERID, followerUID).iterator().next();
+					followedUser = g.getVertices(TwitterGraphConstants.USERID, followedUID).iterator().next();
+					
+				} catch (java.util.NoSuchElementException e1) {
+					
+					System.out.println(String.format("Did not find users followerUID:%s followedUID:%s", followerUID, followedUID));
+					
+					continue;
+				}
+								
+				Edge follows = g.addEdge(null, followerUser, followedUser, TwitterGraphConstants.FOLLOWSEDGETYPE);
+				Edge followedby = g.addEdge(null, followedUser, followerUser, TwitterGraphConstants.FOLLOWEDBYEDGETYPE);
+				
+				// set follow time
+				long epoch = GetEpoch(followTime, "yyyy-MM-dd HH:mm:ss");
+				follows.setProperty(TwitterGraphConstants.STARTFOLLOWTIME, epoch);
+				followedby.setProperty(TwitterGraphConstants.STARTFOLLOWTIME, epoch);
+				
+			}
+ 
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();	
+			
+		} finally {
+			
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+			
+		}		
+		
+	}
+	
+	//load twitter tweets data from a file. 
+	//format of each line in file => uid<tab>tweetid<tab>text<tab>tweettime
+	
+	static void LoadTweetsData(String twitterTweetsDataFile, TitanGraph g)
+	{
+		BufferedReader br = null;
+		 
+		try {
+ 
+			String sCurrentLine;
+ 
+			br = new BufferedReader(new FileReader(twitterTweetsDataFile));
+ 
+			while ((sCurrentLine = br.readLine()) != null) {
+				System.out.println(sCurrentLine);
+				String[] parts = sCurrentLine.split("\t");
+				
+				if(parts.length != 4) {
+					continue;
+				}
+				
+				long uid = Long.parseLong(parts[0]);
+				long tweetid = Long.parseLong(parts[1]);
+				
+				String text = parts[2];
+				
+				String tweetTime = parts[3];
+				
+				System.out.println(String.format("Setting values uid:%s tweetid:%s text:%s tweetTime:%s", 
+						uid, tweetid, text, tweetTime));				
+				
+				//create new tweet 
+				Vertex tweet = g.addVertex(null); 
+				
+				tweet.setProperty(TwitterGraphConstants.TWEETID, tweetid);
+				tweet.setProperty(TwitterGraphConstants.TEXT, text);
+				
+				// set Tweet time
+				long epoch = GetEpoch(tweetTime, "EEE MMM d HH:mm:ss yyyy");
+				tweet.setProperty(TwitterGraphConstants.TWEETTIME, epoch);	
+				
+				//Get user vertex
+				Vertex user;
+								
+				try {
+					
+					user = g.getVertices(TwitterGraphConstants.USERID, uid).iterator().next();
+										
+				} catch (java.util.NoSuchElementException e1) {
+					
+					System.out.println(String.format("Did not find user uid:%s", uid));
+					
+					continue;
+				}
+				
+				//create the Tweets edge
+				Edge tweets = g.addEdge(null, user, tweet, TwitterGraphConstants.TWEETSEDGETYPE);				
+						    
+			}
+ 
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();	
+			
+		} finally {
+			
+			try {
+				if (br != null)br.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+			
+		}
+		
+		
+	}
+	
+	//function to print all followers of a user after specific time
+	public static void PrintAllFollowersAfterGivenDateTime(TitanGraph g, long userId, long epoch) {
+		
+		Vertex v = null;
+		
+		try {
+			v = g.getVertices(TwitterGraphConstants.USERID, userId).iterator().next();
+			long uid = v.getProperty(TwitterGraphConstants.USERID);
+			String screenname = v.getProperty(TwitterGraphConstants.USERSCREENNAME);
+			String uname = v.getProperty(TwitterGraphConstants.USERNAME);
+			long createtime = v.getProperty(TwitterGraphConstants.USERCREATETIME);
+			System.out.println(String.format("User Values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", 
+					uid,
+					screenname,
+					uname,
+					createtime));
+		} catch (java.util.NoSuchElementException e1) {
+			e1.printStackTrace();
+		}	
+		
+		String userName = v.getProperty(TwitterGraphConstants.USERNAME);
+		
+		System.out.println(String.format("The followers for User with uid:%s screenname:%s uname:%s after epoch:%s are as follows", userId, 
+				
+		for(Vertex vertex : v.query().labels(TwitterGraphConstants.FOLLOWEDBYEDGETYPE).has(TwitterGraphConstants.STARTFOLLOWTIME, epoch, Compare.GREATER_THAN).vertices()) { 
+			  System.out.println(String.format("%s is followed by %s", userName, vertex.getProperty(TwitterGraphConstants.USERSCREENNAME) )); 
+		}
+	}
+
+
+}

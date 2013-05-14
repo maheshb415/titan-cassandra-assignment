@@ -1,0 +1,17 @@
+{
+  "/home/mahesh/minewhat/titan-cassandra-assignment/twitterGraph/code/java_code/TwitterGraphInTitan/src": {
+    "location": "/home/mahesh/minewhat/titan-cassandra-assignment/twitterGraph/code/java_code/TwitterGraphInTitan/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/home/mahesh/minewhat/titan-cassandra-assignment/twitterGraph/code/java_code/TwitterGraphInTitan/src\u0027. Skipped."
+  },
+  "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/joda-time-2.0.jar": {
+    "location": "/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/joda-time-2.0.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027/home/mahesh/minewhat/titan/titan-cassandra-0.2.1/lib/joda-time-2.0.jar\u0027. Neither fingerprint \u0027752c0fe8a5b2d6704c9d9d6f06d9abdcacf4045d\u0027 nor symbolic name \u0027joda-time\u0027 are known."
+  },
+  "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  }
+}

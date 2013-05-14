@@ -1,0 +1,37 @@
+Graph Model for twitter:
+
+<Nodes Begin>
+
+1)  User Node with below properties
+    1) uid => id for User. There is an index on this property for efficient retrieval of User node with a given uid 
+    2) screenname => Twitter handle for User
+    3) uname => User's actual name
+    4) createtime =>epoch  timestamp when User registered
+
+2)  Tweet Node with below properties
+    1) tweetid => id for Tweet
+    2) text => Tweet text
+    3) tweettime => time when the Tweet got created
+
+<Nodes End>
+
+<Edges Begin> 
+   
+1)  FollowedBy Edge (key "followedby") 
+    Its an edge between two User nodes indicating one User is followed by other User. 
+    This edge is useful for efficient retrieval of all followers of a User
+    A FollowedBy Edge has following properties
+        1) followtime => time since first User is followed by second User
+
+2)  Follows Edge (key "follows")  
+    Its an edge between two User nodes indicating one User is following other User. 
+    This edge is useful for efficient retrieval of all users followed by a given User. 
+    A Follows Edge has following properties
+        1) followtime => time since first user is following second User
+
+2)  Tweets Edge (key "tweets")  
+    Its an edge between a User node and a Tweet node, indicating that the User has tweeted a Tweet  
+    This edge is useful for efficient retrieval of all Tweets tweeted by a given User 
+    
+
+<Edges End>
