@@ -9,7 +9,7 @@ Graph Model for twitter:
     4) createtime =>epoch  timestamp when User registered
 
 2)  Tweet Node with below properties
-    1) tweetid => id for Tweet
+    1) tweetid => id for Tweet. There is an index on this property for efficient retrieval of Tweet node with a given tweetid
     2) text => Tweet text
     3) tweettime => time when the Tweet got created
 
