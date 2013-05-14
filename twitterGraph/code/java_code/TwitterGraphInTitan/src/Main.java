@@ -22,7 +22,7 @@ public class Main {
 		System.out.println("	java -jar TwitterGraphInTitan.jar getfollowers <cassandraConfigFile> <userId> <afterDateSting> <DateFormat>");
 		System.out.println("	Use below sample command if you are running from the directory containing the jar file (titan-cassandra-assignment/twitterGraph/build)");
 		System.out.println("	java -jar TwitterGraphInTitan.jar getfollowers ../config/titan.cassandra.properties 813286 \"2013-05-12 00:00:00\" \"yyyy-MM-dd HH:mm:ss\"");
-		System.out.println("java -jar TwitterGraphInTitan.jar getfollowers <cassandraConfigFile> <userId> <afterDateSting> <DateFormat>");
+		
 	}
 	public static void main(String[] args) {
 				
@@ -77,10 +77,10 @@ public class Main {
 			}
 
 			if(getFollowers) {
-				
+				/*
 				System.out.println(String.format("ToGet All followers of user with id %s and after datetime %s and format %s"
 						,uid, afterDateStr, dateFormat));
-				
+				*/
 				long epoch = TwitterGraph.GetEpoch(afterDateStr, dateFormat);
 				TwitterGraph.PrintAllFollowersAfterGivenDateTime(g, uid, epoch);
 			}

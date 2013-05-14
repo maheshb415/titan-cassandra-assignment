@@ -108,7 +108,7 @@ public class TwitterGraph {
 						user = g.getVertices(TwitterGraphConstants.USERID, userId).iterator().next();
 											
 					} catch (java.util.NoSuchElementException e1) {					
-						System.out.println(String.format("Did not find user uid:%s", userId));
+						//System.out.println(String.format("Did not find user uid:%s", userId));
 						//create new user
 						user = g.addVertex(null); 
 					}
@@ -117,7 +117,7 @@ public class TwitterGraph {
 					String userName = parts[2];
 					String userCreateTime = parts[3];
 					
-					System.out.println(String.format("Setting values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", userId, userScreenName, userName, userCreateTime));
+					//System.out.println(String.format("Setting values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", userId, userScreenName, userName, userCreateTime));
 					
 					user.setProperty(TwitterGraphConstants.USERID, userId);
 					user.setProperty(TwitterGraphConstants.USERSCREENNAME, userScreenName);
@@ -126,12 +126,12 @@ public class TwitterGraph {
 					//set user create time				
 					long epoch = GetEpoch(userCreateTime, "EEE MMM d HH:mm:ss yyyy");
 					user.setProperty(TwitterGraphConstants.USERCREATETIME, epoch);
-					
+					/*
 					System.out.println(String.format("Set values UserId:%s userScreenName:%s userName:%s userCreateTime:%s", 
 							user.getProperty(TwitterGraphConstants.USERID),
 							user.getProperty(TwitterGraphConstants.USERSCREENNAME),
 							user.getProperty(TwitterGraphConstants.USERNAME),
-							user.getProperty(TwitterGraphConstants.USERCREATETIME)));
+							user.getProperty(TwitterGraphConstants.USERCREATETIME)));*/
 					
 				} catch (Exception e) {
 					
@@ -187,7 +187,7 @@ public class TwitterGraph {
 				long followerUID = Long.parseLong(parts[0]);
 				long followedUID = Long.parseLong(parts[1]);
 				String followTime = parts[2];
-				System.out.println(String.format("Setting values followerUID:%s followedUID:%s followTime:%s", followerUID, followedUID, followTime));
+				//System.out.println(String.format("Setting values followerUID:%s followedUID:%s followTime:%s", followerUID, followedUID, followTime));
 				
 				
 				Vertex followerUser;
@@ -199,7 +199,7 @@ public class TwitterGraph {
 					
 				} catch (java.util.NoSuchElementException e1) {
 					
-					System.out.println(String.format("Did not find users followerUID:%s followedUID:%s", followerUID, followedUID));
+					//System.out.println(String.format("Did not find users followerUID:%s followedUID:%s", followerUID, followedUID));
 					
 					continue;
 				}
@@ -268,8 +268,10 @@ public class TwitterGraph {
 					
 					String tweetTime = parts[3];
 					
+					/*
 					System.out.println(String.format("Setting values uid:%s tweetid:%s text:%s tweetTime:%s", 
-							uid, tweetid, text, tweetTime));				
+							uid, tweetid, text, tweetTime));
+					*/				
 					
 					//Check if tweet vertex already exists. if it exists then its properties will be overwritten
 					Vertex tweet;
@@ -279,7 +281,7 @@ public class TwitterGraph {
 						tweet = g.getVertices(TwitterGraphConstants.TWEETID, tweetid).iterator().next();
 											
 					} catch (java.util.NoSuchElementException e1) {					
-						System.out.println(String.format("Did not find tweet tweetid:%s", tweetid));
+						//System.out.println(String.format("Did not find tweet tweetid:%s", tweetid));
 						//create new tweet 
 						tweet = g.addVertex(null); 
 					}
@@ -301,7 +303,7 @@ public class TwitterGraph {
 											
 					} catch (java.util.NoSuchElementException e1) {
 						
-						System.out.println(String.format("Did not find user uid:%s", uid));
+						//System.out.println(String.format("Did not find user uid:%s", uid));
 						
 						continue;
 					}
